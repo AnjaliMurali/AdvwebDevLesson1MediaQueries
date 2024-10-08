@@ -1,0 +1,95 @@
+
+body{
+    text-align:center;
+    font-size: 50px;
+}
+.container{
+    background-color: white ;
+    height : 100vh;
+}
+
+
+@media screen and (max-width : 800px){
+    .xyz{
+      background-color: yellow;
+    }
+    body{
+      font-size: 10px;
+    }
+   
+  }
+  
+@media screen and (min-width : 1000px) and (max-width : 1200px){
+    .xyz{
+      background-color: red;
+    }
+    body{
+      font-size: 30px;
+    }
+  }
+  
+
+  @media screen and (min-width : 1200px) and (max-width : 1500px){
+    .xyz{
+      background-color: blue;
+    }
+    body{
+      font-size: 40px;
+    }
+   
+  }
+
+  ul{
+    
+    font-size: 20px;
+    list-style:none;
+    display:flex;
+    padding: 10px;
+    background:gray;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  ul li{
+    
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+   
+  }
+
+    /* Make navigation bar vertical */
+  @media screen and (max-width: 800px) {
+    ul {
+      flex-direction: column; /* Align items vertically */
+      height: auto; /* Allow the height to adjust based on content */
+  }
+
+  }
+
+  /* Make Images Responsive */
+  @media (max-width: 800px) {
+    img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (min-width: 801px) {
+    img {
+        width: 50%; /* Make images smaller on larger screens */
+    }
+}
+
+/* Orientation-Based Styles (Portrait vs. Landscape) */
+@media (orientation: landscape) {
+  body {
+      background-color: lightgreen;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+      background-color: lightcoral;
+  }
+}
